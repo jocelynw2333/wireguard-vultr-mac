@@ -10,15 +10,15 @@
 
 在控制台选择 **Dashboard**，找到**Current Charges**并点击：
 
-![Dashboard页面](/Users/ann/Desktop/截屏2026-11-15 21.39.11.png)
+![Dashboard页面](images/开始充值.png)
 
 支付方式任选自己适合的，充值金额最低为10美元（够用2个月）：
 
-![image-20261115214355846](/Users/ann/Library/Application Support/typora-user-images/充值页面.png)
+![image-20261115214355846](images/充值页面.png)
 
 充值成功后回到控制台，可以看到账户余额：
 
-![image-20261115214558475](/Users/ann/Library/Application Support/typora-user-images/账户余额.png)
+![image-20261115214558475](images/账户余额.png)
 
 ### 1.3 创建实例
 
@@ -28,7 +28,7 @@
 
 选择 **Shared GPU**：
 
-![配置界面](/Users/ann/Library/Application Support/typora-user-images/配置界面.png)
+![配置界面](images/配置界面.png)
 
 推荐配置如下：
 
@@ -68,7 +68,7 @@ cat ~/.ssh/vultr_wireguard.pub
 
 完成后，向下检查 Additional Features，确保没有开启收费的 Automatic Backups。然后就可以点击右侧蓝色 Deploy 创建服务器。创建完界面如下：
 
-![image-20261115220629816](/Users/ann/Library/Application Support/typora-user-images/购买完成.png)
+![image-20261115220629816](images/购买完成.png)
 
 点击蓝色的 Cloud Instance，进入服务器详情页，找到 Start（启动） 或 Power On（开机） 按钮。
 
@@ -262,7 +262,7 @@ SCP（Secure Copy）会通过 SSH 加密连接传输文件。下载成功后，�
 
 安装完成后打开 WireGuard，选择 **Import tunnel(s) from file（从文件导入隧道）**，选中下载的 `vultr-mac.conf`。应用可能要求你批准 macOS 的 VPN 配置权限，按系统提示操作。
 
-导入后会出现名为 `vultr-mac` 的隧道。选中它，点击 **Activate（激活）**；需要断开时点击 **Deactivate（停用）**。不需要重新登录服务器，也不需要让终端保持打开。![image-20261115225443270](/Users/ann/Library/Application Support/typora-user-images/激活.png)
+导入后会出现名为 `vultr-mac` 的隧道。选中它，点击 **Activate（激活）**；需要断开时点击 **Deactivate（停用）**。不需要重新登录服务器，也不需要让终端保持打开。![image-20261115225443270](images/激活.png)
 
 ### 3.4 验证连接是否成功
 
@@ -276,7 +276,7 @@ curl -4 --noproxy '*' --max-time 15 https://api.ipify.org
 
 也可以使用 Safari 打开 `https://ipinfo.io/ip`，查看网页显示的公网 IP 是否与 Vultr 一致。
 
-![image-20261115225554867](/Users/ann/Library/Application Support/typora-user-images/验证连接.png)
+![image-20261115225554867](images/验证连接.png)
 
 如果显示 Mac 原来的公网 IP，或者命令超时，请先检查 WireGuard 是否已激活，再按照下一节排查。Mac 本地终端偶尔会在 IP 后面显示 `%`，它通常只是 zsh 的命令提示显示效果，不属于 IP 地址。
 
