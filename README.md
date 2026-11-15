@@ -24,7 +24,7 @@
 
 选择左侧 **Compute → Instances**，点击 **Create Instance**：
 
-![](/Users/ann/Desktop/创建界面.png)
+![](images/创建界面.png)
 
 选择 **Shared GPU**：
 
