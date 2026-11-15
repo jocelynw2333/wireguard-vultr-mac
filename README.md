@@ -46,7 +46,7 @@
 
 进入以下界面：
 
-![](images/image(20261105-122805).png)
+![](images/密钥.png)
 
 打开 Mac 终端，执行命令：
 
@@ -95,7 +95,7 @@ Username: root
 Password: •••••••
 ```
 
-![Vultr 套餐截图七](images/image(20261105-123234).png)
+![Vultr 套餐截图七](images/复制密码.png)
 
 将 Vultr 提供的服务器密码复制下来，回到终端粘贴从 Vultr 复制的 root 密码，然后按回车。
 
